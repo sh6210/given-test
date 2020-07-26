@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pupunit
+        bootstrap="vendor/autoload.php"
+        printerFile="vendor/whatthejeff/nyancat-phpunit-resultprinter/src/NyanCat/PHPUnit/ResultPrinter.php"
+        printerClass="NyanCat\PHPUnit\ResultPrinter">
+    <testsuites>
+        <testsuite name="Foo">
+            <file>Tests/Foo/Fizz/InputsTest.php</file>
+            <file>Tests/Foo/Buzz/RecursionTest.php</file>
+            <file>Tests/Foo/BazzTest.php</file>
+            <file>Tests/FooTest.php</file>
+            <exclude>./vendor</exclude>
+            <exclude>./report</exclude>
+        </testsuite>
+        <testsuite name="Bar">
+            <directory>alpha</directory>
+            <directory>beta</directory>
+            <directory>gamma</directory>
+        </testsuite>
+    </testsuites>
+</pupunit>
